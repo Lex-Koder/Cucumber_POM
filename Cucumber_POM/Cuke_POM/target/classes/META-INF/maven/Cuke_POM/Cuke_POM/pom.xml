@@ -8,9 +8,9 @@
   <url>http://maven.apache.org</url>
   <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <cucumber.version>7.6.0</cucumber.version>
-        <selenium.version>4.3.0</selenium.version>
-        <webdrivermanager.version>5.2.1</webdrivermanager.version>
+        <cucumber.version>7.23.0</cucumber.version>
+        <selenium.version>4.33.0</selenium.version>
+        <webdrivermanager.version>6.1.0</webdrivermanager.version>
         <junit.version>4.13.2</junit.version>
         <apache.common.version>2.4</apache.common.version>
         <maven.compiler.plugin.version>3.10.1</maven.compiler.plugin.version>

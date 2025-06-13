@@ -1,6 +1,5 @@
 package com.example.actions;
 import org.openqa.selenium.support.PageFactory;
-
 import com.example.locator.HomePageLocators;
 import com.example.utils.HelperClass;
  
