@@ -18,7 +18,6 @@ public class Hooks {
     @After
     public static void tearDown(Scenario scenario) {
  
-       
         HelperClass.tearDown();
     }
 

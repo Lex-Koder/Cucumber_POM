@@ -1,11 +1,15 @@
 package com.example.definitions;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 import org.junit.Assert;
+
 
 //import com.example.actions.ForgotPasswordActions;
 import com.example.actions.HomePageActions;
 import com.example.actions.LoginPageActions;
+import com.example.database.Database;
 import com.example.utils.HelperClass;
- 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -14,6 +18,7 @@ import io.cucumber.java.en.When;
 public class LoginPageDefinitions {
 	LoginPageActions objLogin = new LoginPageActions();
     HomePageActions objHomePage = new HomePageActions();
+    Database db = new Database();
     
     @Given("User is on HRMLogin page")
     public void loginTest() {
@@ -23,9 +28,11 @@ public class LoginPageDefinitions {
     }
   
     @When("User enters username as {string} and password as {string}")
-    public void goToHomePage(String userName, String passWord) {
+    public void goToHomePage(String userName, String passWord) throws SQLException {
   
         // login to application
+        String firstName = db.GetNames();
+    	userName = firstName;
         objLogin.login(userName, passWord);
   
         // go the next page
