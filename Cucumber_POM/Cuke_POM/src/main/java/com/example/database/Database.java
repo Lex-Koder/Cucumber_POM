@@ -13,7 +13,7 @@ public class Database {
    private void DBConnection() {
 	   
 	    try {
-			con = DriverManager.getConnection("jdbc:sqlserver://localhost\\SQLEXPRESS;DATABASENAME=CHAMPS;encrypt=false;integratedSecurity=true;");
+			con = DriverManager.getConnection("jdbc:sqlserver://localhost\\SQLEXPRESS;DATABASENAME=CHAMPS;encrypt=false;integratedSecurity=true");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
